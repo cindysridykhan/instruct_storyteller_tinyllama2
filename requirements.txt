@@ -1,0 +1,4 @@
+numpy==1.23.5
+sentencepiece==0.1.99
+torch==2.0.1
+tqdm==4.64.1
