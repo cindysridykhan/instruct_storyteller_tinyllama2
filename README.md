@@ -5,7 +5,7 @@ The LLM I trained follows instructions to write tiny stories.
 
 **Demo**
 
-<img src="/story1500.gif" width="500" height="500"/>
+<img src="assets/story1500.gif" width="500" height="500"/>
 
 This repository is heavily inspired from Karpathy's [llama2.c repository](https://github.com/karpathy/llama2.c), and for the LoRA part, from wlamond's [PR](https://github.com/karpathy/llama2.c/pull/187).
 
