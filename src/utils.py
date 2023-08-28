@@ -92,7 +92,8 @@ def save_checkpoint(
         model_args, 
         iter_num, 
         out_dir,
-        out_fn='ckpt.pt'
+        out_fn='ckpt.pt',
+        lora_config=None
         ):
     checkpoint = {
         "model": model.state_dict(),
@@ -100,6 +101,9 @@ def save_checkpoint(
         "model_args": model_args,
         "iter_num": iter_num,
     }
+    if lora_config:
+        checkpoint['lora_finetune'] = True
+        checkpoint.update({'lora_' + k:v for k, v in lora_config.items()})
     print(f"saving checkpoint to {out_dir}")
     torch.save(checkpoint, os.path.join(out_dir, out_fn))
 

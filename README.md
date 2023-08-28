@@ -33,24 +33,19 @@ Alternatively, you can also use the [generate.ipynb](notebooks/generate.ipynb) n
 
 ## Training
 
-Note: All the following .py files are available in [notebook version](notebooks)
-
-### Dataset
+### Instruction Dataset
 
 The dataset I used is the [TinyStories](https://huggingface.co/datasets/roneneldan/TinyStories) dataset, with additional preprocessing steps to rework the prompts. (see [blogpost]() for more details).
-To prepare the dataset, run
-```
-python prepare_dataset.py --input_dir='path/to/TinyStoriesFolder' --output_dir='data'
-```
+To prepare the dataset, follow the [prepare_instruct_dataset](notebooks/prepare_instruct_dataset.ipynb) notebook.
 
 ### Training from scratch
 
-Training from scratch can be done from the notebook [instruct_training_from_scratch.ipynb](instruct_training_from_scratch.ipynb).
+Training from scratch can be done from the notebook [instruct_training_from_scratch](notebooks/instruct_training_from_scratch.ipynb).
 
 ### LoRA Fine-tuning
 
-LoRA Fine-tuning can be done from the notebook [instruct_finetuning.ipynb](instruct_finetuning.ipynb). 
-By default in this notebook, I started from Karpathy's 110M parameters pretrained model that you can find on HuggingFace Hub at [tinyllamas](https://huggingface.co/karpathy/tinyllamas). 
+LoRA Fine-tuning can be done from the notebook [instruct_lora_finetune.ipynb](instruct_lora_finetune.ipynb). 
+Here, I started from Karpathy's 110M parameters pretrained model that you can find on HuggingFace Hub at [tinyllamas](https://huggingface.co/karpathy/tinyllamas). 
 LoRA is then applied to the architecture, with rank 2 matrices and on ['wq', 'wk', 'wo', 'wv'] layers.
 
 

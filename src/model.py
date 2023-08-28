@@ -295,10 +295,6 @@ class LoraLinear(nn.Module):
 
 
 def apply_lora(model: nn.Module, targets=['wq', 'wk', 'wo', 'wv'], rank=8, dropout=0.0, alpha=1.0, verbose=False):
-    # def _apply_lora(module):
-    #     if type(module) in layer_types and hasattr(module, 'weight'):
-    #         fan_out, fan_in = module.weight.shape
-    #         parametrize.register_parametrization(module, 'weight', LoraLinear(fan_in, fan_out, rank, dropout, alpha))
 
     for name, module in model.named_modules():
         if any(name.endswith(target) for target in targets) and hasattr(module, 'weight'):
