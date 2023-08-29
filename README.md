@@ -1,4 +1,4 @@
-# Training and Fine-Tuning LLM in Python and PyTorch from scratch
+# Training and Fine-Tuning LLM in Python and PyTorch
 
 This repository contains a standalone low-level Python and PyTorch code to train and fine-tune a small version of the Llama2 LLM.
 The LLM I trained follows instructions to write tiny stories.
@@ -18,8 +18,8 @@ pip install -r requirements.txt
 #### Models
 
 The models are available on HuggingFace hub:
-- [Trained from scratch model (15M parameters)]
-- [LoRA finetuned model (110M parameters)]
+- [LoRA finetuned model (110M parameters)](https://huggingface.co/cindytrain/story_teller_llama/blob/main/lora_story_teller_110M.pt)
+- [Trained from scratch model (15M parameters)](https://huggingface.co/cindytrain/story_teller_llama/blob/main/story_teller_from_scratch_15M.pt)
 
 
 ## Inference
