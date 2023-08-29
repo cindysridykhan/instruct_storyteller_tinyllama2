@@ -51,6 +51,4 @@ LoRA is then applied to the architecture, with rank 2 matrices and on ['wq', 'wk
 
 
 ## Notes on the trained models
-Currently, the models only support prompts like 'Write a story. In the story, try to use the verb "{verb}", the noun "{noun}" and the adjective "{adj}". The story has the following features: it should contain a dialogue. Possible story:', that is, prompts that look like the one in the training set. Plus, in order for the story to make sens, the verb, noun and adjective given must be common words that are present in the training set.
-
-This is because it has been trained only on the TinyStories dataset. It would be interesting to make the dataset more diverse, or to finetune from one of the pretrained llama2 models.
+Currently, the models only support prompts like 'Write a story. In the story, try to use the verb "{verb}", the noun "{noun}" and the adjective "{adj}". The story has the following features: it should contain a dialogue. Possible story:', that is, prompts that look like the one in the training set. Plus, in order for the story to make sens, the verb, noun and adjective given must be common words that are present in the training set. This is because it has been trained only on the TinyStories dataset. It would be interesting to make the dataset more diverse.
