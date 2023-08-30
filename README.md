@@ -1,6 +1,6 @@
 # Training and Fine-Tuning LLM in Python and PyTorch
 
-This repository contains a standalone low-level Python and PyTorch code to train and fine-tune a small version of the Llama2 LLM.
+This repository contains a standalone low-level Python and PyTorch code to train and fine-tune a small version of the Llama2 LLM. See the [associated blogpost](https://medium.com/@cindy.sridykhan/how-to-train-and-fine-tune-an-instruct-llama2-model-in-pytorch-6cbe11de2b34).
 The LLM I trained follows instructions to write tiny stories.
 
 **Demo**
