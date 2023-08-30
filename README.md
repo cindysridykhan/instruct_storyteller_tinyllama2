@@ -44,7 +44,7 @@ Training from scratch can be done from the notebook [instruct_training_from_scra
 
 ### LoRA Fine-tuning
 
-LoRA Fine-tuning can be done from the notebook [instruct_lora_finetune.ipynb](instruct_lora_finetune.ipynb). 
+LoRA Fine-tuning can be done from the notebook [instruct_lora_finetune.ipynb](notebooks/instruct_lora_finetune.ipynb). 
 Here, I started from Karpathy's 110M parameters pretrained model that you can find on HuggingFace Hub at [tinyllamas](https://huggingface.co/karpathy/tinyllamas). 
 LoRA is then applied to the architecture, with rank 2 matrices and on ['wq', 'wk', 'wo', 'wv'] layers.
 
